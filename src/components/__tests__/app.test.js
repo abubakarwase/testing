@@ -8,5 +8,5 @@ import App from "../App";
 it("Renders the connected app with initialState", () => {
   render(<App />, { initialState: { songs: "Dummy song" } });
 
-  // expect(screen.getByText(/redux user/i)).toBeInTheDocument();
+  expect(screen.getByText(/redux user/i)).toBeInTheDocument();
 });
