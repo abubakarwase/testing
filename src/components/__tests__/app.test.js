@@ -6,7 +6,7 @@ import { render, fireEvent, screen } from "../../test-utils";
 import App from "../App";
 
 it("Renders the connected app with initialState", () => {
-  render(<App />, { initialState: { songs: "Dummy song" } });
-
+  render(<App />);
+  //   { initialState: { songs: "Dummy song" } }
   //   expect(screen.getByText(/redux user/i)).toBeInTheDocument();
 });
