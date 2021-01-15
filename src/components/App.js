@@ -1,12 +1,20 @@
 import React from "react";
-import CommentBox from "./CommentBox";
-import CommentList from "./CommentList";
+import SongList from "./SongList";
+import SongDetail from "./SongDetail";
 
-export default () => {
+const App = () => {
   return (
-    <div>
-      <CommentBox />
-      <CommentList />
+    <div className="ui container grid">
+      <div className="ui row">
+        <div className="column eight wide">
+          <SongList />
+        </div>
+        <div className="col eight wide">
+          <SongDetail />
+        </div>
+      </div>
     </div>
   );
 };
+
+export default App;
